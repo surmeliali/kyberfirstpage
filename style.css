@@ -1,0 +1,1263 @@
+/*--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 18px 10px;
+  font-size: 20px;
+  width: 24%;
+}
+/* Tab lerin üzerine gelince renk değiştirilmesini sağlıyor */
+.tablink:hover {
+  background-color: #777;
+}
+
+  /* display i silince sayfa ilk açıldığında ekranda swap kısmı oluyor*/
+  .tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+/* Tab in yukarı olan konumu*/
+
+.tablink {
+	border-bottom:0px solid #ddd;
+  margin: 25px 0 0;
+}
+
+
+
+/* Tablerin içindeki yazının şekli, zaten yukarı aldım..
+.tablink  {
+	font-family: 'Source Sans Pro';
+	font-size:1.65em;
+	font-weight:300;
+  transition:.2s;
+  color:white;
+}
+*/
+
+/*  Tablerin boyutunu değiştiriyor,zaten yukarı aldım
+.tablink {
+  font-size: 20px;
+	width:33%;
+	padding: 15px 0 5px;
+  color:white;
+}
+ */
+
+
+
+h1,h2,h3,h4,h5,h6{
+
+/*---sağ sayfadaki city break yazısı için---*/
+
+	margin:0;
+	font-weight:400;
+    transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+
+}
+.clear {
+	clear:both;
+}
+/*-- olmasa da oluyor
+ p{
+	margin:0;
+}
+
+ul{
+	margin:0;
+	padding:0;
+}
+label{
+	margin:0;
+}
+.text-center {
+	text-align:center;
+}
+
+@font-face{
+	font-family:'PoiretOne';
+	src:url('../fonts/PoiretOne.ttf') format('truetype');
+}
+@font-face{
+	font-family:'raleway';
+	src:url('../fonts/raleway.ttf') format('truetype');
+}
+--*/
+
+
+/*---header---*/
+/*---Ana Başlık
+.booking-agile h1 {
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: capitalize;
+    color: #fff;
+	letter-spacing:2px;
+    padding: 0.5em 0 1em;
+	font-family: 'Raleway', sans-serif;
+}
+---*/
+
+
+.bookingleft-agile h2 {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+		margin: 1em 0;
+		color:white	;
+		font-family: 'Roboto', sans-serif;
+}
+/*--/header---*/
+
+/*--booking--*/
+
+/*--ilk 3 tanesi sayfa konumlandırması için
+		ilki toplam sayfa alanı
+		ikincisi soldaki üçüncüsü sağdaki --*/
+.headbooking-agile {
+    width: 97%;
+    margin: 0 auto;
+}
+
+.bookinglefter-agile {
+    width: 33%;
+    float: left;
+    background: rgba(16, 15, 15, 0.55);
+    padding: 0em;
+    box-sizing: border-box;
+    overflow:scroll;
+    height:700px;
+
+
+}
+
+
+
+
+.bookingleft-agile {
+    width: 44%;
+    float: left;
+    background: rgba(16, 15, 15, 0.55);
+    padding: 2em;
+		margin-left: 0.5%;
+    box-sizing: border-box;
+}
+
+.buyForm {
+  width: 49%;
+  float: left;
+  background: transparent;
+  padding: 0em;
+  margin-left: 0.5%;
+  box-sizing: border-box;
+}
+
+.sellForm {
+  width: 49%;
+  float: left;
+  background: transparent;
+  padding: 0em;
+  margin-left: 0.5%;
+  box-sizing: border-box;
+}
+
+.bookingright-agile{
+	width: 18%;
+    float: left;
+    background: transparent;
+    padding: 2em;
+    margin-left: 0.5%;
+    box-sizing: border-box;
+}
+
+/*--7 satır tabloyla ilgili--*/
+.th{
+  background-color:rgba(255,255,255,0.3) ;
+
+ }
+
+
+
+
+.tbl-header{
+  background-color: rgba(255,255,255,0.3);
+ }
+.tbl-content{
+  height:520px;
+  overflow-x:auto;
+  margin-top: 0px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+th{
+  padding: 20px 15px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: rgba(255,255,255,0.3);
+}
+td{
+  padding: 15px;
+  text-align: center;
+  vertical-align:middle;
+  font-weight: 600;
+  font-size: 10px;
+  color: #fff;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+/*--arkaplan rengi için--*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+body{
+  background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+  background: linear-gradient(to right, #25c481, #25b7c4);
+  font-family: 'Roboto', sans-serif;
+}
+section{
+  margin: 20px;
+}
+
+
+
+
+/*--ilk 4 tanesi input alan boyutları için için--*/
+
+.arrival-agile {
+    width: 100%;
+    float: left;
+}
+.departure-agile {
+    width: 100%;
+    float: right;
+}
+.guest-agile {
+    float: left;
+    width: 100%;
+}
+.room-agile {
+    float: left;
+    width: 100%;
+}
+
+/*-- ilk 3 tanesi giriş alanı için background, silersek beyaz input alanı
+
+		datapicker checkin-checkout kısmıyla ilgili
+		datapicker1 input alanıyla ilgili düzenleme	--*/
+
+
+
+/*--date sekmesi fotoğraf yada simge yerleştirmek için--*/
+.date{
+	background: url(../images/calendar.png)no-repeat 225px 13px;
+	cursor:pointer;
+}
+
+
+
+
+input#quantity {
+    font-size: 150px;
+    font-weight: 500;
+    text-align: left;
+    padding: 0.5em 0.5em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 1em;
+		width:87%;
+		color:#fff;
+		font-family: 'Roboto', sans-serif;
+}
+
+
+
+/*--ilk 2 tanesi ana başlıklar için renk değiştiriyor --*/
+
+.arrival-agile p, .departure-agile p{
+    font-size: 20px;
+    font-weight: 1;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    margin: 2em 0;
+	   color: #fff;
+		font-family: 'Roboto', sans-serif;
+}
+.guest-agile p, .room-agile p {
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin: 0.8em 0;
+	color:#fff;
+		font-family: 'Roboto', sans-serif;
+
+}
+.name-agile p,.last-agile p{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin: 0.8em 0;
+	   color: #fff;
+		font-family: 'Roboto', sans-serif;
+}
+
+.guest-agile input[type="number"], .room-agile input[type="number"] {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+    width: 95%;
+    background: none;
+    padding: 0.5em 0;
+	color:#fff;
+	margin-bottom: 1.7em;
+	border-bottom: 1px solid #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*--aşağıdaki select kısmının transparanlığını sağlar--*/
+
+
+.guest-agile select,.room-agile select {
+    width: 95%;
+    border: none;
+    background: transparent;
+	color:#fff;
+    border-bottom: 1px solid #fff;
+    padding: 0.5em 0;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+	margin-bottom: 1em;
+	font-family: 'Roboto', sans-serif;
+}
+
+.arrival-agile select,.departure-agile select {
+    width: 95%;
+    border: none;
+    background: transparent;
+	color:#fff;
+    border-bottom: 1px solid #fff;
+    padding: 0.5em 0;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+	margin-bottom: 1em;
+	font-family: 'Roboto', sans-serif;
+}
+
+/*--  Date seçme olayını kaldırdığımız için kalksa sorun yok
+
+#ui-datepicker-div {
+    font-family: 'Open Sans', sans-serif;
+    background: none !important;
+}
+.ui-datepicker {
+    width: 13% !important;
+}
+--*/
+
+/*--ilk 5 tanesi İsim soyisim ve submit butonları için--*/
+.name-agile{
+	width:100%;
+	float:left;
+}
+.last-agile{
+	width:100%;
+	float:left;
+}
+.name-agile input[type="number"], .last-agile input[type="number"] {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 0px;
+    border: none;
+    outline: none;
+    width: 95%;
+    background: none;
+    padding: 0.5em 0;
+	  color:#fff;
+	  margin-bottom: 1.7em;
+	  border-bottom: 1px solid #fff;
+	  font-family: 'Roboto', sans-serif;
+}
+.submit-agile input[type="submit"] {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    width: 50%;
+    display: block;
+    border: none;
+		outline: none;
+		cursor:pointer;
+    background:rgba(216, 171, 23, 0.99);
+    color: #fff;
+    padding:0.8em 0.8em;
+	font-family: 'Raleway', sans-serif;
+}
+.submit-agile input[type="submit"]:hover {
+	background:rgba(12, 255, 133, 0.68);
+	color:#fff;
+	transition:.5s ease-in;
+
+}
+
+/* Placeholder ların renklerini belirlemek için */
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #fff;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #fff;
+}
+::-ms-input-placeholder { /* IE 10+ */
+  color: #fff;
+}
+::-moz-placeholder { /* Firefox 18- */
+  color: #fff;
+}
+/*--/booking--*/
+
+
+/*--booking-right--*/
+
+
+.bookingright-agile h3{
+	font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+	color:white;
+	margin: 1em 0;
+	font-family: 'Raleway', sans-serif;
+
+}
+
+/*-- Bu kısım iconlar için. ancak iconları kaldırdık o yüzden gerek yok
+.icon-agile  {
+    float: left;
+    width: 30%;
+}
+.icon-agile i {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 2.2em;
+	color: #fff;
+	transform: rotate(20deg);
+}
+
+.mail-agile  {
+    float: left;
+    width: 30%;
+}
+.mail-agile i {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 2.2em;
+	color: #fff;
+}
+
+--*/
+
+
+.contact-agile{
+	float:left;
+	width:50%;
+	}
+.contact-agile p {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color: #fff;
+	font-family: 'Raleway', sans-serif;
+}
+.contact-agile span {
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    display: block;
+		margin:1em 0 3em;
+		font-family: 'Raleway', sans-serif;
+}
+
+.address-agile{
+	float:left;
+	width:50%;
+}
+.address-agile p {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color: #fff;
+	font-family: 'Raleway', sans-serif;
+}
+.address-agile a{
+	font-size:15px;
+	font-weight:500;
+	text-transform:capitalize;
+	letter-spacing:1px;
+	color:#fff;
+	font-family: 'Raleway', sans-serif;
+	}
+.address-agile a:hover{
+	text-decoration:none;
+	color:#fff;
+	}
+.offers-agile h4 {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    color: #f3c207;
+    margin: 0.8em 0 0.9em;
+    letter-spacing: 2px;
+    font-family: 'Raleway', sans-serif;
+}
+ul.offers li {
+    list-style-type: none;
+	padding: 1em 0;
+}
+.offers li a {
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+	text-decoration:none;
+    color: #fff;
+	font-family: 'Raleway', sans-serif;
+}
+.offers-agile span {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: capitalize;
+    display: block;
+	padding: 0.3em 0 0.2em;
+    color:#f7e604;
+	font-family: 'Raleway', sans-serif;
+}
+.offers-agile span:before {
+    content: '\f155';
+    font-family: FontAwesome;
+}
+option {
+    background:rgba(214, 169, 23, 0.75);
+    color: #fff;
+}
+.ui-quatity table{
+    background: #d6a917!important;
+}
+.ui-quantity .ui-quantity-header{
+    background: rgba(128, 111, 59, 0.84)!important;
+}
+/*--/booking-right--*/
+/*--alt kısım için boşluk bırakıyor--*/
+/* İlk 4 tanesi footer */
+.made-with-love {
+  margin-top: 40px;
+  padding: 10px;
+  clear: left;
+  text-align: center;
+  font-size: 10px;
+  font-family: arial;
+  color: #fff;
+}
+.made-with-love i {
+  font-style: normal;
+  color: #F50057;
+  font-size: 14px;
+  position: relative;
+  top: 2px;
+}
+.made-with-love a {
+  color: #fff;
+  text-decoration: none;
+}
+.made-with-love a:hover {
+  text-decoration: underline;
+}
+
+/*--/copyright--*/
+
+/*--responsive--*/
+/*--sadece sayfa biraz daha küçülüyor
+@media(max-width:1920px){
+	.date {
+		background: url(../images/calendar.png)no-repeat 265px 13px;
+		cursor: pointer;
+	}
+
+	.offers-agile span {
+		margin: 1.35em 0 1.35em;
+	}
+}
+@media(max-width:1680px){
+	.offers-agile span{
+		margin:0 0 0.5em;
+		}
+	.date {
+		background: url(../images/calendar.png)no-repeat 230px 13px;
+		cursor: pointer;
+	}
+}
+@media(max-width:1600px){
+	.date {
+		background: url(../images/calendar.png)no-repeat 219px 13px;
+		cursor: pointer;
+	}
+	.offers-agile span{
+		margin-bottom: 0em;
+	}
+}
+@media(max-width:1440px){
+	.headbooking-agile {
+		width: 70%;
+	}
+	.date {
+		background: url(../images/calendar.png)no-repeat 229px 13px;
+	}
+	.offers-agile span{
+		margin-bottom: 0.88em;
+	}
+	.ui-datepicker {
+		width: 16.5%!important;
+	}
+}
+@media(max-width:1366px){
+	.headbooking-agile {
+		width: 75%;
+	}
+	.date {
+		background: url(../images/calendar.png)no-repeat 230px 13px;
+	}
+	.offers-agile span {
+		margin-bottom: 1em;
+	}
+	.ui-datepicker {
+		width: 17.5%!important;
+	}
+	.offers-agile span{
+		margin: 0.88em;
+	}
+}
+@media(max-width:1280px){
+	.offers-agile span {
+		margin: 0em;
+	}
+	.date {
+		background: url(../images/calendar.png)no-repeat 211px 13px;
+	}
+	.ui-datepicker {
+		width: 16.5%!important;
+	}
+}
+@media(max-width:1080px){
+	.headbooking-agile {
+		width: 85%;
+	}
+	.date {
+		background: url(../images/calendar.png)no-repeat 200px 13px;
+	}
+	.ui-datepicker {
+		width: 20.5%!important;
+	}
+	.submit-agile input[type="submit"]{
+		width: 40%;
+	}
+	ul.offers li {
+		padding: 0.5em 0;
+	}
+	.offers-agile span {
+		margin: 1.2em 0 1.2em;
+	}
+}
+@media(max-width:1050px){
+	.date {
+		background: url(../images/calendar.png)no-repeat 197px 13px;
+	}
+	ul.offers li {
+		padding: 0.45em 0;
+	}
+	.offers-agile span {
+		margin: 1.5em 0 1.2em;
+	}
+}
+@media(max-width:1024px){
+	.headbooking-agile {
+		width: 90%;
+	}
+.date {
+		background: url(../images/calendar.png)no-repeat 203px 13px;
+	}
+	.offers-agile span {
+		margin: 2em 0 1.5em;
+	}
+	.bookingright-agile h3{
+		margin: 0 0 1.35em;
+	}
+}
+@media(max-width:991px){
+	.date {
+		background: url(../images/calendar.png)no-repeat 196px 13px;
+	}
+	.submit-agile input[type="submit"]{
+		width: 40%;
+	}
+	ul.offers li {
+        padding: 0.61em 0;
+	}
+	.offers-agile span {
+		margin: 1.4em 0 1.4em;
+	}
+}
+@media(max-width:900px){
+	.date {
+		background: url(../images/calendar.png)no-repeat 188px 13px;
+	}
+	.headbooking-agile {
+		width: 96%;
+	}
+	.ui-datepicker {
+		width: 22.5%!important;
+	}
+	.bookingright-agile {
+    width: 34%;
+	}
+	.submit-agile input[type="submit"] {
+		width: 45%;
+	}
+	.offers-agile span {
+		margin: 1em 0 1em;
+	}
+}
+@media(max-width:800px){
+	.date {
+		background: url(../images/calendar.png)no-repeat 141px 13px;
+	}
+	.ui-datepicker {
+		width: 21.5%!important;
+	}
+	.bookingleft-agile {
+		width: 54%;
+	}
+	.bookingright-agile {
+		width: 45%;
+	}
+	.submit-agile input[type="submit"]{
+		width: 52%;
+	}
+	.offers-agile span {
+		margin: 1.4em 0 1.5em;
+	}
+	.ui-datepicker table{
+		font-size: .65em!important;
+	}
+}
+@media(max-width:768px){
+	.bookingleft-agile {
+		width: 54%;
+	}
+	.bookingright-agile {
+		width: 42%;
+	}
+	.offers-agile span {
+		margin-bottom: 0.2em;
+	}
+	.bookingright-agile h3 {
+		margin: 1em 0 1.25em;
+	}
+	.submit-agile input[type="submit"] {
+		width: 60%;
+	}
+	.ui-datepicker table{
+		font-size: .55em!important;
+	}
+
+}
+@media(max-width:736px){
+	.submit-agile input[type="submit"]{
+		width: 55%;
+	}
+	.date {
+		background: url(../images/calendar.png)no-repeat 125px 13px;
+	}
+	.ui-datepicker {
+		width: 23.65%!important;
+	}
+	.ui-datepicker table{
+		font-size: 0.64em!important;
+	}
+	.contact-agile span {
+		font-size: 14px;
+	}
+	.offers-agile span {
+		margin-bottom: 0.3em;
+	}
+	.address-agile a {
+		font-size: 15px;
+		font-weight: 500;
+		text-align: center;
+		display: block;
+    }
+	.bookingleft-agile h2 {
+    font-size: 29px;
+	}
+}
+@media(max-width:667px){
+	.bookingleft-agile {
+		width: 90%;
+		margin-left: 2em;
+		margin-bottom:1em;
+	}
+	.bookingright-agile {
+		width: 90%;
+		margin-left: 2em;
+	}
+	ul.offers {
+		width: 69%;
+		margin: 0 auto;
+	}
+
+	.date {
+		background: url(../images/calendar.png)no-repeat 210px 13px;
+	}
+	.ui-datepicker {
+		width: 35%!important;
+	}
+}
+@media(max-width:600px){
+	.booking-agile h1 {
+		font-size: 34px;
+		padding: 0.5em 0 0.5em;
+	}
+	.date {
+		background: url(../images/calendar.png)no-repeat 188px 13px;
+	}
+	.ui-datepicker {
+		width: 35%!important;
+	}
+	ul.offers {
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+@media(max-width:568px){
+	.date {
+		background: url(../images/calendar.png)no-repeat 178px 13px;
+	}
+}
+@media(max-width:480px){
+	.date {
+		background: url(../images/calendar.png)no-repeat 155px 13px;
+	}
+	.bookingleft-agile {
+		width: 95%;
+		margin-left: 1em;
+		margin-bottom: 1em;
+	}
+	.bookingright-agile {
+		width: 95%;
+		margin-left: 1em;
+	}
+	.booking-agile h1 {
+		font-size: 31px;
+	}
+}
+@media(max-width:414px){
+	.booking-agile h1 {
+    font-size: 31px;
+    padding: 0.5em 0 0.5em;
+	}
+	.date {
+		background: url(../images/calendar.png)no-repeat 123px 13px;
+	}
+	.ui-datepicker {
+		width: 38%!important;
+	}
+	.submit-agile input[type="submit"] {
+		width: 60%;
+	}
+	ul.offers {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.bookingleft-agile h2 {
+		font-size: 23px;
+	}
+}
+@media(max-width:384px){
+	.booking-agile h1 {
+		font-size: 26px;
+		padding: 0.5em 0 0.5em;
+	}
+	.bookingleft-agile h2 {
+		font-size: 25px;
+	}
+	.date {
+		background: url(../images/calendar.png)no-repeat 110px 13px;
+	}
+	.submit-agile input[type="submit"] {
+		width: 70%;
+	}
+	.ui-datepicker {
+		width: 45%!important;
+	}
+}
+@media(max-width:375px){
+	.date {
+		background: url(../images/calendar.png)no-repeat 100px 13px;
+	}
+	.guest-agile p, .room-agile p {
+		font-size: 15px;
+	}
+	.bookingleft-agile h2 {
+		font-size: 24px;
+	}
+}
+@media(max-width:320px){
+	.booking-agile h1 {
+		font-size: 22px;
+		padding: 0.5em 0 0.5em;
+}
+.arrival-agile p, .departure-agile p, .name-agile p, .last-agile p {
+    font-size: 13px;
+}
+.guest-agile p, .room-agile p {
+    font-size: 13px;
+}
+.submit-agile input[type="submit"] {
+    width: 85%;
+}
+.contact-agile span {
+    font-size: 13px;
+}
+footer {
+    font-size: 11px;
+}
+.bookingleft-agile h2 {
+    font-size: 20px;
+}
+.date {
+		background: url(../images/calendar.png)no-repeat 89px 13px;
+	}
+	.ui-datepicker {
+		width: 55%!important;
+	}
+	.offers li a {
+		font-size: 12px;
+	}
+}
+--*/
+/*--/responsive--*/
+
+.tabcontent {
+color: white;
+display: none;
+padding: 100px 20px;
+height: 100%;
+}
+
+.tokentransfer-agile {
+    width: 97%;
+    margin: 0 auto;
+}
+
+.leftpage-agile {
+    width: 38%;
+    float: left;
+    background: rgba(16, 15, 15, 0.55);
+    padding: 2em;
+    box-sizing: border-box;
+}
+
+.leftpage-agile h2 {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  margin: 1em 0;
+  color:white	;
+  font-family: 'Roboto', sans-serif;
+}
+
+.myaddress-agile {
+    float: left;
+    width: 100%;
+}
+
+.receivingaddress-agile {
+    float: left;
+    width: 100%;
+}
+
+.myaddress-agile p, .receivingaddress-agile p {
+    font-size: 17px;
+    font-weight: 600;
+    text-align: left;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin: 0.8em 0;
+	color:#fff;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+.myaddress-agile input[type="text"], .receivingaddress-agile input[type="text"] {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+    width: 95%;
+    background: none;
+    padding: 0.5em 0;
+	  color:#fff;
+	  margin-bottom: 1.7em;
+	  border-bottom: 1px solid #fff;
+	  font-family: 'Roboto', sans-serif;
+}
+
+/*--aşağıdaki select kısmının transparanlığını sağlar--*/
+
+
+
+
+
+.middlepage-agile {
+    width: 38%;
+    float: left;
+    background: rgba(16, 15, 15, 0.55);
+    padding: 2em;
+		margin-left: 0%;
+    box-sizing: border-box;
+}
+
+.middlepage-agile h2 {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+		margin: 1em 0;
+		color:white	;
+		font-family: 'Roboto', sans-serif;
+}
+
+
+.from-agile {
+    width: 100%;
+    float: left;
+}
+.from-agile p{
+    font-size: 17px;
+    font-weight: 600;
+    text-align: left;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin: 0.8em 0;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+}
+
+.from-agile select{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+    width: 95%;
+    background: none;
+    padding: 0.5em 0;
+	  color:#fff;
+	  margin-bottom: 1.7em;
+	  border-bottom: 1px solid #fff;
+	  font-family: 'Roboto', sans-serif;
+}
+
+.quantity-agile {
+    float: left;
+    width: 100%;
+}
+
+.quantity-agile p {
+    font-size: 17px;
+    font-weight: 600;
+    text-align: left;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin: 0.8em 0;
+	color:#fff;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+.quantity-agile input[type="text"] {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+    width: 95%;
+    background: none;
+    padding: 0.5em 0;
+	color:#fff;
+	margin-bottom: 1.7em;
+	border-bottom: 1px solid #fff;
+	font-family: 'Roboto', sans-serif;
+}
+
+.percentage-agile output {
+  position: absolute;
+  background-image: linear-gradient(#444444, #999999);
+  width: 40px;
+  height: 30px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  display: inline-block;
+  font: bold 15px/30px Georgia;
+  bottom: 175%;
+  left: 0;
+  margin-left: -1%;
+
+}
+
+
+.percentage-agile output:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 10px solid #999999;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -1px;
+}
+.percentage-agile form {
+  position: relative;
+  margin: 20px;
+
+}
+
+.send-agile input[type="submit"] {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    width: 40%;
+    display: block;
+    border: none;
+		outline: none;
+		cursor:pointer;
+    background:rgba(216, 171, 23, 0.99);
+    color: #fff;
+    padding:0.8em 0.8em;
+	font-family: 'Raleway', sans-serif;
+}
+
+.send-agile input[type="submit"]:hover {
+	background:rgba(12, 255, 133, 0.68);
+	color:#fff;
+	transition:.5s ease-in;
+
+}
+
+.rightpage-agile {
+	width: 18%;
+    float: left;
+    background: transparent;
+    padding: 2em;
+    margin-left: 0.5%;
+    box-sizing: border-box;
+}
+
+.rightpage-agile h3{
+	font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+	color:white;
+	margin: 1em 0;
+	font-family: 'Raleway', sans-serif;
+
+}

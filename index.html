@@ -1,0 +1,284 @@
+<!--
+author: W3layouts
+author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Index</title>
+<!-- Meta tag Keywords -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="abc" />
+<!-- Meta tag Keywords -->
+<!-- 17.sıradaki tab ler için bootstrap kütüphanesi -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css" type="text/css" media="all" /><!-- Style-CSS -->
+<link rel="stylesheet" href="css/font-awesome.min.css"><!--fontawesome-css-->
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="./index.js"></script>
+<script type="text/javascript" src="./table.js"></script>
+
+<link href="//fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<script src="./node_modules/web3/dist/web3.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+
+<script type="text/javascript" src="./table.js"></script>
+
+
+
+</head>
+<body>
+
+<ul class="tablinks" role="tablist">
+  <button class="tablink" onclick="openPage('Exchange')">Token Exchange<br/><i class="material-icons " style="font-size: 38px">swap_horiz</i></button>
+  <button class="tablink" onclick="openPage('Transfer')">Token Transfer<br/><i class="material-icons" style="font-size: 38px">send</i></button>
+  <button class="tablink" onclick="openPage('Credit')">Token Credit<br/><i class="material-icons" style="font-size: 38px">account_balance</i></button>
+  <button class="tablink" onclick="openPage('Land')">Buy a Land<br/><i class="material-icons" style="font-size: 38px">golf_course</i></button>
+</ul>
+  <div id="Exchange" class="tabcontent">
+    <section class="booking-agile">
+
+    <div class="headbooking-agile" >
+
+    			<div class="bookinglefter-agile" id="showData" >
+
+    			</div>
+          <div class="bookingleft-agile">
+    				<h2>SWAP TOKEN</h2>
+
+    					<form action="#" method="get">
+
+              <div class="buyForm">
+    						 <div class="arrival-agile">
+    							<p>ETH&nbsp;<i class="material-icons " style="font-size: 27px">arrow_forward</i>  <span id="tokenNameBuy"></span></p>
+
+                  <span id="tokenAddress" value = ""></span>
+                  <span id="tokenSource" value = ""></span>
+
+
+
+
+    						</div>
+    						<div class="clear"></div>
+
+                <div class="guest-agile">
+                  <p>Buy Price</p>
+                    <input placeholder="0" value="" id="buyPrice" type="number"  name="price" >
+
+                </div>
+
+    						<div class="clear"></div>
+
+                <div class="room-agile">
+                    <p>Quantity</p>
+
+                    <input id="amountEntryBuy" type="number" oninput="expectedRateBuy()"  placeholder="0">
+                </div>
+
+                <div class="clear"></div>
+
+                <div class="name-agile">
+                  <p>Total</p>
+                  <h3>Expected Amount: <span id="minRateBuy"></span></h3>
+
+
+
+                </div>
+
+                <div class="clear"></div>
+
+                <div class="submit-agile">
+                  <input type="submit" value="BUY IT!">
+                </div>
+              </div>
+
+              <div class="sellForm">
+
+    						 <div class="departure-agile">
+    							<p><span id="tokenNameSell"></span><i class="material-icons" style="font-size: 27px">arrow_forward</i>&nbsp;ETH</p>
+                   <span id="tokenAddressSell" value = ""></span>
+                   <span id="tokenSourceSell" value = ""></span>
+    						 </div>
+    						<div class="clear"></div>
+
+    							<div class="room-agile">
+    								<p>Sell Price</p>
+    									<input placeholder="0.0000" class="date" id="sellPrice" type="number" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="" />
+    							</div>
+    							<div class="clear"></div>
+    							<div class="room-agile">
+    									<p>Quantity</p>
+    									<input type="number" name="uname" placeholder="0">
+    							</div>
+
+    							<div class="clear"></div>
+
+
+    							<div class="last-agile">
+    								<p>Total</p>
+    								<input type="number" name="lname" placeholder="0" >
+    							</div>
+    							<div class="clear"></div>
+    								<div class="submit-agile">
+    									<input type="submit" value="SELL IT!">
+    								</div>
+                </div>
+    								<div class="clear"></div>
+    						</form>
+    				</div>
+    			<div class="bookingright-agile">
+    				<h3>Advanced</h3>
+    			<div class="mobile-agile">
+    				<div class="icon-agile">
+    					<span><i class="fa fa-phone" aria-hidden="true"></i></span>
+    				</div>
+    				<div class="contact-agile">
+    					<p>My Wallet Address:</p>
+    					<span>0x00000000000000000</span>
+    				</div>
+    			</div>
+    			<div class="clear"></div>
+    			<div class="email-agile">
+    				<div class="mail-agile">
+    					<span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+    				</div>
+    				<div class="address-agile">
+    					<p>ETH Balance:</p>
+    					<span>x.xxx ETH</span>
+    				</div>
+    				<div class="clear"></div>
+    				<div class="offers-agile">
+    					<h4>Advanced Gas Fee:</h4>
+    				<ul class="offers">
+    					<li><a href="#">Slow: 0.0025 ETH</a></li>
+    					<li><a href="#">Standart: 0.0029 ETH</a></li>
+    					<li><a href="#">Fast: 0.0033 ETH </a></li>
+    				</ul>
+    					<span></span>
+    				</div>
+    			</div>
+    				</div>
+    			<div class="clear"></div>
+    </div>
+
+    </section>
+  </div>
+
+  <div id="Transfer" class="tabcontent">
+
+
+    <section class="tokentransfer-agile">
+        <div class="transferpage-agile">
+
+
+          <div class="leftpage-agile">
+                <h2>Receiving Address</h2>
+                <form action="#" method="get">
+                  <div class="myaddress-agile">
+                      <p>My Wallet Address</p>
+                      <input type="text" name="uname" placeholder="0x00000000000000000">
+                  </div>
+
+                  <div class="clear"></div>
+
+                  <div class="receivingaddress-agile">
+                      <p>Receiving Wallet Address</p>
+                      <input type="text" name="uname" placeholder="0x00000000000000000">
+                  </div>
+
+
+            </div>
+
+          <div class="middlepage-agile">
+                <h2>Select Token</h2>
+                  <form action="#" method="get">
+                    <div class="from-agile">
+                      <p>Token to Send</p>
+                      <select>
+
+                        <option>Ethereum</option>
+                        <option>Enigma</option>
+                        <option>Kyber Network</option>
+                      </select>
+
+                    </div>
+                  </form>
+
+                  <div class="clear"></div>
+
+                  <div class="quantity-agile">
+                      <p>Quantity</p>
+                      <input type="text" name="uname" placeholder="0">
+                  </div>
+
+                    <div class="clear"></div>
+
+                    <div class="percentage-agile">
+                      <form>
+                        <input type="range" name="foo" min="0" max="100" style="width: 400px;">
+                        <output for="foo" onforminput="value = foo.valueAsNumber;"></output>
+                      </form>
+                    </div>
+
+                    <div class="clear"></div>
+
+                    <div class="send-agile">
+                      <input type="submit" value="SEND IT!">
+                    </div>
+
+            </div>
+          <div class="rightpage-agile">
+                <h2>Advanced</h2>
+
+
+            </div>
+
+
+        </div>
+
+
+
+    </section>
+  </div>
+
+  <div id="Credit" class="tabcontent">
+    <h3>Token Credit Page</h3>
+    <p>3th Page</p>
+  </div>
+
+  <div id="Land" class="tabcontent">
+    <h3>Decentraland Marketplace Page</h3>
+    <p>4th Page</p>
+  </div>
+
+
+<!--start-date-piker
+		<link rel="stylesheet" href="css/jquery-ui.css" />
+		<script src="js/jquery-ui.js"></script>
+			<script>
+				$(function() {
+				$( "#datepicker,#datepicker1" ).datepicker();
+				});
+			</script>
+			-->
+<!-- /End-date-piker -->
+</body>
+<footer>
+	<div class="made-with-love">
+    Made with
+    <i>♥</i> by
+    <a target="_blank" href="https://codepen.io/nikhil8krishnan">Nikhil Krishnan</a>
+  </div>
+</footer>
+</html>
